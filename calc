@@ -1,11 +1,28 @@
 num_list = []
-how_many = int(input("how many numbers you want add to the list?"))
-print(how_many) 
+how_many = int(input("how many numbers you want add to the list: "))
+ 
 x=0
 while x < how_many:
-    
-    x +=1
-    print(x)
+    num = int(input("Enter a whole digit: "))
+    num_list.append(num)
+    x +=1  
+print(num_list)
 
+operation = input("Enter an operation: A for addition or M for multiplication:").upper()
+
+addition = 0
+multiplication = 1
+
+if operation =="A":
+    for num in num_list:
+        addition += num
+    print("Addition of the numbers is: ", addition)
+elif operation =="M":
+    for num in num_list:
+        multiplication = multiplication * num
+    print("Multiplication of the number is: ", multiplication)
+
+else:
+    print("invalid operation")
 
 
