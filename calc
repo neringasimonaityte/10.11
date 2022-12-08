@@ -1,0 +1,11 @@
+num_list = []
+how_many = int(input("how many numbers you want add to the list?"))
+print(how_many) 
+x=0
+while x < how_many:
+    
+    x +=1
+    print(x)
+
+
+
